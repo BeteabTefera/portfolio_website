@@ -4,7 +4,7 @@ export function About() {
   return (
     <div className="flex flex-col md:flex-row items-center gap-8">
       <div className="md:w-1/2">
-        <img src="https://i.ibb.co/YkFscH1/IMG-5460.jpg" alt="Profile" className="rounded-full w-64 h-64 object-cover mx-auto" />
+        <img src="https://i.ibb.co/YkFscH1/IMG-5460.jpg" alt="Profile" className="rounded-full w-64 h-64 object-cover object-top mx-auto" />
       </div>
       <div className="md:w-1/2">
         <h3 className="text-2xl font-bold mb-4">Hi, I&apos;m Beteab Tefera</h3>
