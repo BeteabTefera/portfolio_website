@@ -22,3 +22,9 @@ Ensure you have the following tools installed:
 ### Cloning the Repository  
 ```bash
 git clone https://github.com/BeteabTefera/portfolio_website.git
+```
+### Running Locally
+Navigate to the project directory:
+- Open the index.html file in your browser, or start a local server using tools like Live Server.
+### 🤝 Contributing
+Contributions are welcome! If you have suggestions or improvements, feel free to submit a pull request or create an issue.
