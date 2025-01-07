@@ -17,7 +17,7 @@ export function Hero (){
                 <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
                 Software Engineer skilled in web and mobile development, now exploring machine learning for innovative solutions.
                 </p>
-                <Button asChild size="lg" className="bg-white text-purple-900 hover:bg-purple-100 transition-colors duration-300">
+                <Button asChild >
                     <a href="#projects" className="flex items-center">
                     View My Work
                     <ArrowDownCircle className="w-6 h-6 ml-2" />

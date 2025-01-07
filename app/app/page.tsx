@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-purple-900 text-white py-20">
+      <section className="text-black py-20">
         <Hero/>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20">
+      <section id="projects" className="py-2">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
           <Projects />
