@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Projects } from "@/components/projects"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
