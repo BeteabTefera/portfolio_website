@@ -25,6 +25,8 @@ git clone https://github.com/BeteabTefera/portfolio_website.git
 ```
 ### Running Locally
 Navigate to the project directory:
-- Open the index.html file in your browser, or start a local server using tools like Live Server.
+- cd to App
+- run npm install
+- run npm run dev
 ### 🤝 Contributing
 Contributions are welcome! If you have suggestions or improvements, feel free to submit a pull request or create an issue.
