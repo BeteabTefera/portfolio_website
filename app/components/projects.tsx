@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ThemeProvider } from "@/app/providers/theme-provider"
 
 const projects = [
   {
@@ -34,24 +35,26 @@ const projects = [
 
 export function Projects() {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {projects.map((project, index) => (
-        <Card key={index}>
-          <CardHeader>
-            <CardTitle>{project.title}</CardTitle>
-            <CardDescription>{project.description}</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <img src={project.image} alt={project.title} className="w-full h-48 object-cover mb-4 rounded-md" />
-            <div className="flex flex-wrap gap-2">
-              {project.technologies.map((tech, techIndex) => (
-                <Badge key={techIndex} variant="secondary">{tech}</Badge>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
+    <ThemeProvider>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project, index) => (
+          <Card key={index}>
+            <CardHeader>
+              <CardTitle>{project.title}</CardTitle>
+              <CardDescription>{project.description}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <img src={project.image} alt={project.title} className="w-full h-48 object-cover mb-4 rounded-md" />
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, techIndex) => (
+                  <Badge key={techIndex} variant="secondary">{tech}</Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </ThemeProvider>
   )
 }
 
