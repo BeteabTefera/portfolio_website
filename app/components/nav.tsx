@@ -28,6 +28,14 @@ export function Nav() {
                     </div>
                     <div>
                         <Link
+                            href = "#experience"
+                            className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium"
+                        >
+                            Experience
+                        </Link>
+                    </div>
+                    <div>
+                        <Link
                             href = "#projects"
                             className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium"
                         >
