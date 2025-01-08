@@ -9,20 +9,24 @@ export function Hero() {
       <div className="flex flex-col items-center justify-center min-h-screen text-center">
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-4">
-            <TypeAnimation
-              sequence={["Hello, I'm Beteab!"]}
-              wrapper="span"
-              speed={75}
-              repeat={1}
-            />
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed out once, initially
+              'Beteab Tefera',
+              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              'Software Engineer',
+              1000,
+              'I mostly debug... 🐛',
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{ fontSize: '2em', display: 'inline-block' }}
+            repeat={Infinity}
+          />
           </h1>
           <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
-            <TypeAnimation
-              sequence={["Software Engineer skilled in cloud, web, mobile development, data engineering now exploring machine learning for innovative solutions."]}
-              wrapper="span"
-              speed={90}
-              repeat={1}
-            />
+            Software Engineer BUILDING INNOVATIVE DIGITAL SOLUTIONS
           </p>
         </div>
         
