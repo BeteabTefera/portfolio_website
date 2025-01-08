@@ -17,6 +17,10 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Beteab Tefera",
   description: "Beteab Tefera's personal website",
+  icons:
+  {
+    icon: 'assets/favicon.ico'
+  }
 };
 
 export default function RootLayout({
