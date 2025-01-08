@@ -3,6 +3,7 @@ import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
 import { Hero } from "@/components/hero"
 import { Nav } from "@/components/nav"
+import { Experiences } from "@/components/experience"
 import { ThemeProvider } from "./providers/theme-provider"
 
 export default function Home() {
@@ -22,6 +23,13 @@ export default function Home() {
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
             <About />
+          </div>
+        </section>
+        {/*Experience Section */}
+        <section id="experience" className="py-8">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">Experience</h2>
+            <Experiences/>
           </div>
         </section>
         {/* Projects Section */}
