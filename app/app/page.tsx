@@ -37,7 +37,6 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="py-10">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Where to Find Me</h2>
             <Contact />
           </div>
         </section>
