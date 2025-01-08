@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { ThemeProvider } from "@/app/providers/theme-provider"
+import { profileImage } from "../public/assets"
+
 export function About() {
   return (
     <ThemeProvider>
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2">
-          <img src="https://i.ibb.co/YkFscH1/IMG-5460.jpg" alt="Profile" className="rounded-full w-64 h-64 object-cover object-top mx-auto" />
+          <img src={profileImage} alt="Profile" className="rounded-full w-64 h-64 object-cover object-top mx-auto" />
         </div>
         <div className="dark:text-gray-300 md:w-1/2">
           <h3 className="dark:text-gray-300 text-2xl font-bold mb-4">Hi, I&apos;m Beteab Tefera</h3>

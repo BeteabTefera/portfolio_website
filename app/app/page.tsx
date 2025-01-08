@@ -17,20 +17,18 @@ export default function Home() {
         <section className="py-8">
           <Hero/>
         </section>
-
-        {/* Projects Section */}
-        <section id="projects" className="py-8">
-          <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
-            <Projects />
-          </div>
-        </section>
-
         {/* About Section */}
         <section id="about" className="py-10">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
             <About />
+          </div>
+        </section>
+        {/* Projects Section */}
+        <section id="projects" className="py-8">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
+            <Projects />
           </div>
         </section>
 

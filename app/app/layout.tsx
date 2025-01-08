@@ -4,12 +4,12 @@ import "./globals.css";
 import { ThemeProvider } from './providers/theme-provider';
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../public/assets/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../public/assets/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
