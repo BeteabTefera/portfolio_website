@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ThemeProvider } from "@/app/providers/theme-provider"
-import { profileImage } from "../public/assets"
+//import { profileImage } from "../public/assets"
 import { HeartHandshake } from "lucide-react"
 
 export function About() {
