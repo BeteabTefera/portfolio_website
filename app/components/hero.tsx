@@ -16,8 +16,6 @@ export function Hero() {
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
                 'Software Engineer',
                 1000,
-                'Bug Hunter🐛',
-                1000,
               ]}
               wrapper="span"
               speed={50}
