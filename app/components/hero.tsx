@@ -8,6 +8,9 @@ export function Hero() {
     <ThemeProvider>
       <div className="flex flex-col items-center justify-center min-h-screen text-center">
         <div className="container mx-auto">
+          <div className="md:w-1/2">
+            <img src="https://notion-avatar.vercel.app/api/img/eyJmYWNlIjoxNCwibm9zZSI6MCwibW91dGgiOjksImV5ZXMiOjYsImV5ZWJyb3dzIjoxNSwiZ2xhc3NlcyI6MCwiaGFpciI6MywiYWNjZXNzb3JpZXMiOjcsImRldGFpbHMiOjAsImJlYXJkIjoxNCwiZmxpcCI6MCwiY29sb3IiOiIjYmZiZmJmIiwic2hhcGUiOiJjaXJjbGUifQ==" alt="Profile" className="rounded-full w-64 h-64 object-cover object-top mx-auto" />
+          </div>
           <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             <TypeAnimation
               sequence={[
