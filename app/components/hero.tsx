@@ -8,32 +8,32 @@ export function Hero() {
     <ThemeProvider>
       <div className="flex flex-col items-center justify-center min-h-screen text-center">
         <div className="container mx-auto">
-          <div className="md:w-1/2">
-            <img src="https://notion-avatar.vercel.app/api/img/eyJmYWNlIjoxNCwibm9zZSI6MCwibW91dGgiOjksImV5ZXMiOjYsImV5ZWJyb3dzIjoxNSwiZ2xhc3NlcyI6MCwiaGFpciI6MywiYWNjZXNzb3JpZXMiOjcsImRldGFpbHMiOjAsImJlYXJkIjoxNCwiZmxpcCI6MCwiY29sb3IiOiIjYmZiZmJmIiwic2hhcGUiOiJjaXJjbGUifQ==" alt="Profile" className="rounded-full w-64 h-64 object-cover object-top mx-auto" />
-          </div>
           <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <img src="../assets/notion-style-avatar.svg" alt="Profile" className="rounded-full w-64 h-64 object-cover object-top mx-auto" />
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
                 'Beteab Tefera',
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 'Software Engineer',
                 1000,
+                'Beteab Tefera'
               ]}
               wrapper="span"
               speed={50}
               style={{ 
-                fontSize: '2em', 
+                fontSize: '1.5em', 
                 display: 'inline-block', 
                 wordBreak: 'break-word',
                 whiteSpace: 'normal',
                 lineHeight: '1.2',
               }}
-              repeat={Infinity}
+              repeat={0}
             />
+            
           </h1>
           <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
-            Software Engineer BUILDING INNOVATIVE DIGITAL SOLUTIONS
+            Software Engineer passionate about Technology, Driven by Creativity and Impactful Solutions
           </p>
         </div>
         

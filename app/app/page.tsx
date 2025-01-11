@@ -21,7 +21,6 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="py-10">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
             <About />
           </div>
         </section>
