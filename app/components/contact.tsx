@@ -46,7 +46,7 @@ export function Contact() {
 
   return (
     <div>
-      <div className="px-14 pb-8">
+      <div className="px-3 pb-8">
         <section>
           <h1>
             <HeartHandshake /> Let’s Chat!
