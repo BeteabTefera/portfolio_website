@@ -20,15 +20,7 @@ export function Nav() {
                     </div>
                     <div>
                         <Link
-                            href = "#about"
-                            className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium"
-                        >
-                            About
-                        </Link>
-                    </div>
-                    <div>
-                        <Link
-                            href = "#experience"
+                            href = "/experiences"
                             className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium"
                         >
                             Experience
@@ -36,7 +28,7 @@ export function Nav() {
                     </div>
                     <div>
                         <Link
-                            href = "#projects"
+                            href = "/projects"
                             className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium"
                         >
                             Projects
@@ -44,7 +36,7 @@ export function Nav() {
                     </div>
                     <div>
                         <Link
-                            href = "#contact"
+                            href = "/contact"
                             className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium"
                         >
                             Contact
