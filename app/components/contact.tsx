@@ -2,46 +2,47 @@
 import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Linkedin, Mail, Github, HeartHandshake } from "lucide-react";
+import { toast, ToastContainer } from "react-toastify";  // Import the toast module and ToastContainer
+import "react-toastify/dist/ReactToastify.css";  // Import the toast CSS
 
 export function Contact() {
-    //initialize emailjs
-    useEffect(() => {
-        emailjs.init(`${process.env.EMAILJS_USER_ID}`);
-    }
-    , []);
+  // Initialize emailjs
+  useEffect(() => {
+    emailjs.init(`${process.env.EMAILJS_USER_ID}`);
+  }, []);
 
-    const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-    });
+  });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    };
+  };
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
     emailjs
-        .send(
-        `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`, 
-        `${process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID}`, 
+      .send(
+        `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID}`,
         formData,
-        `${process.env.NEXT_PUBLIC_EMAILJS_USER_ID}` 
-        )
-        .then(
+        `${process.env.NEXT_PUBLIC_EMAILJS_USER_ID}`
+      )
+      .then(
         () => {
-            alert("Thank you for reaching out to me, I will get back to you soon!");
-            setFormData({ name: "", email: "", message: "" });
+          toast.success("Thank you for reaching out to me, I will get back to you soon!"); // Show success toast
+          setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
-            console.error("EmailJS Error:", error);
-            alert("Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
+          toast.error("Failed to send message. Please try again."); // Show error toast
         }
-        );
-    };
+      );
+  };
 
   return (
     <div>
@@ -97,6 +98,7 @@ export function Contact() {
           </form>
         </section>
       </div>
+      <ToastContainer />
     </div>
   );
 }
