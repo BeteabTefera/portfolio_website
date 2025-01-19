@@ -11,7 +11,7 @@ export function Hero() {
         <div className="container mx-auto">
           <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             <Image
-              src="/assets/notion-style-avatar.svg"
+              src="/assets/character.jpg"
               alt="Profile"
               width={256}
               height={256}
