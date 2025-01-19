@@ -2,13 +2,15 @@ import { Contact } from "@/components/contact";
 import { Nav } from "@/components/nav";
 export default function Home() {
     return (
-    <div>
-        <Nav/>
-        {/* Contact Section */}
-        <section id="contact" className="py-10">
-          <div className="container mx-auto">
-            <Contact />
-          </div>
-        </section>
-    </div>);
+        <div className="py-[5rem]">
+            <div>
+                <Nav/>
+            </div>
+            <div className="px-4 py-14">
+                {/*Contact Section */}
+                {/*<h2 className="text-3xl font-bold mb-8 text-center">Contact</h2>*/}
+                <Contact/>
+            </div>
+        </div>
+    );
 }
