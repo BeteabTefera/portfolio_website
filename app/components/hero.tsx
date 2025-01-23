@@ -13,8 +13,8 @@ export function Hero() {
             <Image
               src="/assets/headshot-img.jpg"
               alt="Profile"
-              width={256}
-              height={256}
+              width={188}
+              height={188}
               className="rounded-full mx-auto object-cover object-top"
             />
             <TypeAnimation
