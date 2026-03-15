@@ -12,7 +12,7 @@ export function About() {
             Hey I&apos;m Beteab. {<HeartHandshake />}
           </h3>
           <p className="dark:text-gray-300 mb-4 text-block leading-relaxed">
-            I am a passionate Computer Science student at St. Cloud State University, where I am pursuing a Bachelor&apos;s degree with a minor in Psychology. I aim to graduate in May 2025 with a solid foundation in software development, programming, data management, machine learning, and more.
+            I am a passionate graduate of St. Cloud State University, where I earned a Computer Science Bachelor&apos;s degree with a minor in Psychology in 2025. I am currently a Cloud/Data Software Engineer at Ameriprise Financial and a Teaching Assistant at St. Cloud State University, where I have the opportunity to share my knowledge and experience with students in the field of computer science. My academic background and professional experience have equipped me with a strong foundation in software development, cloud computing, and data engineering, and I am eager to continue growing and contributing to the tech community.
           </p>
           <p className="dark:text-gray-300 mb-6 text-block leading-relaxed">
             I enjoy learning new technologies and frameworks, and my goal is to apply my knowledge and skills to contribute to innovative and impactful projects in the tech industry. I value lifelong learning, collaboration, and creativity, and I look forward to connecting with like-minded individuals and exploring the endless possibilities of this fascinating field.
