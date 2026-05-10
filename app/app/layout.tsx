@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider"
 import { SiteFooter } from "@/components/layout/site-footer"
 import { SiteHeader } from "@/components/layout/site-header"
 import { site } from "@/lib/site"
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = localFont({
   src: "../public/assets/GeistVF.woff",
@@ -45,6 +46,7 @@ export default function RootLayout({
             <SiteFooter />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
