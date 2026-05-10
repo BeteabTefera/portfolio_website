@@ -1,16 +1,15 @@
-import { Nav } from "@/components/nav";
-import { Projects } from "@/components/projects";
-export default function Home() {
-    return (
-        <div className="py-[5rem]">
-            <div>
-                <Nav/>
-            </div>
-            <div className="px-4 py-14">
-                {/*Projects Section */}
-                {/*<h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>*/}
-                <Projects/>
-            </div>
-        </div>
-    )
+import type { Metadata } from "next"
+import { Projects } from "@/components/sections/projects"
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Selected projects and builds — web, data, and open source.",
+}
+
+export default function ProjectsPage() {
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <Projects />
+    </div>
+  )
 }

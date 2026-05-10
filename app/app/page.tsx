@@ -1,27 +1,13 @@
-import { About } from "@/components/about"
-import { Hero } from "@/components/hero"
-import { Nav } from "@/components/nav"
-import { ThemeProvider } from "./providers/theme-provider"
+import { About } from "@/components/sections/about"
+import { Hero } from "@/components/sections/hero"
 
 export default function Home() {
   return (
-    <ThemeProvider>
-      <div>
-        {/* Nav Section */}
-        <section className="py-8">
-          <Nav/>
-        </section>
-        {/* Hero Section */}
-        <section className="py-8">
-          <Hero/>
-        </section>
-        {/* About Section */}
-        <section id="about" className="py-10">
-          <div className="container mx-auto">
-            <About />
-          </div>
-        </section>
+    <>
+      <Hero />
+      <div className="mx-auto max-w-4xl px-4 pb-24 sm:px-6">
+        <About />
       </div>
-    </ThemeProvider>
+    </>
   )
 }

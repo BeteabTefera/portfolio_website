@@ -1,16 +1,15 @@
-import { Experiences } from "@/components/experience";
-import { Nav } from "@/components/nav";
-export default function Home() {
-    return (
-        <div className="py-[5rem]">
-            <div>
-                <Nav/>
-            </div>
-            <div className="px-4 py-14">
-                {/*Experience Section */}
-                {/*<h2 className="text-3xl font-bold mb-8 text-center">Experience</h2>*/}
-                <Experiences/>
-            </div>
-        </div>
-    )
+import type { Metadata } from "next"
+import { Experiences } from "@/components/sections/experience"
+
+export const metadata: Metadata = {
+  title: "Experience",
+  description: "Professional experience in cloud, data, and software engineering.",
+}
+
+export default function ExperiencesPage() {
+  return (
+    <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+      <Experiences />
+    </div>
+  )
 }

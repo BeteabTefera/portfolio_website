@@ -1,16 +1,15 @@
-import { Contact } from "@/components/contact";
-import { Nav } from "@/components/nav";
-export default function Home() {
-    return (
-        <div className="py-[5rem]">
-            <div>
-                <Nav/>
-            </div>
-            <div className="px-4 py-14">
-                {/*Contact Section */}
-                {/*<h2 className="text-3xl font-bold mb-8 text-center">Contact</h2>*/}
-                <Contact/>
-            </div>
-        </div>
-    );
+import type { Metadata } from "next"
+import { Contact } from "@/components/sections/contact"
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch via the form or social links.",
+}
+
+export default function ContactPage() {
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <Contact />
+    </div>
+  )
 }
